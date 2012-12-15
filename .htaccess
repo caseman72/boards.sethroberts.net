@@ -1,0 +1,11 @@
+RedirectMatch 403 /\..*$
+
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteBase /
+
+	# no www
+	RewriteCond %{HTTP_HOST} ^www\. [NC]
+	RewriteRule ^(.*)$ http://boards.sethroberts.net/$1 [R=301,L]
+
+</IfModule>
