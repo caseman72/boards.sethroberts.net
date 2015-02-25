@@ -1,4 +1,4 @@
 .rcs
-af-update-boards.sh
+af-*.sh
 .DS_Store
 Settings.php
